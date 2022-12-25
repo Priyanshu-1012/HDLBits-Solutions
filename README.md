@@ -1,6 +1,6 @@
 # HDLBits-Solutions
 
-#Step one
+## Step one
 ```
 module top_module( output one );
 
