@@ -158,3 +158,68 @@ module top_module(
            
 endmodule
 ```
+## Gates4
+```
+module top_module( 
+    input [3:0] in,
+    output out_and,
+    output out_or,
+    output out_xor
+);
+    assign out_and=in[3]&in[2]&in[1]&in[0],
+           out_or=in[3]|in[2]|in[1]|in[0],
+           out_xor=in[3]^in[2]^in[1]^in[0];
+endmodule
+```
+## Vector3
+```
+module top_module (
+    input [4:0] a, b, c, d, e, f,
+    output [7:0] w, x, y, z );//
+
+    wire [31:0] com;
+assign com[31:0]={a[4:0],b[4:0],c[4:0],d[4:0],e[4:0],f[4:0],2'b11};
+    assign z[7:0]= com[7:0];
+    assign y[7:0]= com[15:8];
+    assign x[7:0]= com[23:16];
+    assign w[7:0]= com[31:24];
+
+endmodule
+```
+## Vectorr
+```
+module top_module( 
+    input [7:0] in,
+    output [7:0] out
+);
+    assign out[7:0]={in[0],in[1],in[2],in[3],in[4],in[5],in[6],in[7]};
+endmodule
+```
+method2 (using loop)
+```
+module top_module( 
+    input [7:0] in,
+    output [7:0] out
+);
+  always @(*) begin	
+		for (int i=0; i<8; i++)	
+			out[i] = in[8-i-1];
+	end
+endmodule
+```
+method3 (using generate for-loop)
+```
+module top_module( 
+    input [7:0] in,
+    output [7:0] out
+);
+  generate
+		genvar i;
+      for (i=0; i<8; i = i+1) begin: rev
+			assign out[i] = in[8-i-1];
+		end
+	endgenerate
+endmodule
+```
+## Vector4
+```
