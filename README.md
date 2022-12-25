@@ -119,4 +119,42 @@ endmodule
 ```
 ## Vector1
 ```
+module top_module( 
+    input wire [15:0] in,
+    output wire [7:0] out_hi,
+    output wire [7:0] out_lo );
+    
+    assign out_hi=in[15:8], 
+           out_lo=in[7:0];
+endmodule
+
+```
+## Vector2
+```
+module top_module( 
+    input [31:0] in,
+    output [31:0] out );
+
+    assign out[31:24] = in[7:0],
+           out[23:16] = in[15:8],
+           out[15:8] = in[23:16],
+           out[7:0] = in[31:24];
+
+endmodule
+```
+## Vectorgates
+```
+module top_module( 
+    input [2:0] a,
+    input [2:0] b,
+    output [2:0] out_or_bitwise,
+    output out_or_logical,
+    output [5:0] out_not
+);
+    assign out_or_bitwise[2:0]= a[2:0]|b[2:0],
+           out_or_logical= a||b,
+           out_not[5:3]=~b[2:0],
+           out_not[2:0]=~a[2:0];
+           
+endmodule
 ```
