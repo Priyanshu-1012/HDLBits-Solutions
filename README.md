@@ -103,7 +103,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Always case2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case2)
 
-:white_check_mark: [Always case2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez)
+:white_check_mark: [Always casez](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez)
 	
 	
 </p>
