@@ -83,6 +83,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Module cseladd](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-cseladd)
 	
+:white_check_mark: [Module addsub](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-addsub)
+	
 </p>
 </details>	
 	
@@ -464,5 +466,41 @@ endmodule
 ```
 ## Module addsub
 ```verilog
+module top_module(
+    input [31:0] a,
+    input [31:0] b,
+    input sub,
+    output [31:0] sum
+);
+    wire [15:0]c,c2;
+    wire [31:0]xorout,subin;
+    
+    assign subin={32{sub}};   //making sub 32 bit so that we can XOR it with inp 'b'.
+    assign xorout=b^subin;
+    
+    add16 inst1(.a(a[15:0]), .b(xorout[15:0]), .cin(sub), .cout(c), .sum(sum[15:0]));
+    add16 inst2(.a(a[31:16]), .b(xorout[31:16]), .cin(c), .cout(c2), .sum(sum[31:16]));
 
+endmodule
+```
+method2 (XOR as programmable inverter)
+```verilog
+module top_module(
+    input [31:0] a,
+    input [31:0] b,
+    input sub,
+    output [31:0] sum
+);
+    wire [15:0]c,c2;
+    wire [31:0]xorout;
+    
+    always @(*)                      //XOR gate can also be viewed as a programmable inverter, 
+        case(sub)
+            0: xorout = b;           //where one input controls whether the other should be inverted
+            1: xorout = ~b;
+        endcase
+    add16 inst1(.a(a[15:0]), .b(xorout[15:0]), .cin(sub), .cout(c), .sum(sum[15:0]));
+    add16 inst2(.a(a[31:16]), .b(xorout[31:16]), .cin(c), .cout(c2), .sum(sum[31:16]));
+
+endmodule
 ```
