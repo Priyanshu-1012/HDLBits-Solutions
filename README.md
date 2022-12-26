@@ -1,7 +1,7 @@
 # HDLBits-Solutions
 
-Problems 
-Markup: [Step one](#Step one "Goto Step one") | 
+## Problems 
+Markup: [Step one](#Step one "Goto Step one") 
 
 
 
