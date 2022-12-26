@@ -1,7 +1,9 @@
 Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
+
 # HDLBits-Solutions
 
 ## Problems 
+
 <details><summary>Getting Started</summary>
 <p>
 	
@@ -14,8 +16,26 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 
 
 
-[Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
-[Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
+<details><summary>Verilog Language</summary>
+<p>
+	
+<details><summary>Basics</summary>
+<p>
+	
+- [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
+	
+- [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
+
+</p>
+</details>
+
+</p>
+</details>
+
+
+
+
+
 
 
 ## Step one
