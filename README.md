@@ -81,6 +81,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 	
 :white_check_mark: [Module fadd](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-fadd)
 
+:white_check_mark: [Module cseladd](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-cseladd)
+	
 </p>
 </details>	
 	
