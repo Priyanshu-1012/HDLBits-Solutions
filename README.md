@@ -78,6 +78,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 :white_check_mark: [Module shift8](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
 
 :white_check_mark: [Module add](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
+	
+:white_check_mark: [Module fadd](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-fadd)
 
 </p>
 </details>	
@@ -419,5 +421,21 @@ endmodule
 ```
 ## Module fadd
 ```verilog
+module top_module (
+    input [31:0] a,
+    input [31:0] b,
+    output [31:0] sum
+);
+    wire c,c2;
+    
+    add16 inst1(.a(a[15:0]), .b(b[15:0]), .cin(1'b0), .sum(sum[15:0]),  .cout(c));
+    add16 inst2(.a(a[31:16]), .b(b[31:16]), .cin(c), .sum(sum[31:16]),  .cout(c2));
+endmodule
 
+module add1 ( input a, input b, input cin,   output sum, output cout );
+
+ assign sum = a ^ b ^ cin;
+ assign cout = a&b | a&cin | b&cin;
+ 
+endmodule
 ```
