@@ -62,8 +62,23 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 - [Vector5](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
 </p>
 </details>
-	
-	
+
+
+<details><summary>Modules:Hierarchy</summary>
+<p>
+- [Module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module)
+
+- [Module pos](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos)
+
+- [Module name](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-name)
+
+- [Module shift](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift)
+
+- [Module shift8](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
+
+- [Module add](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
+</p>
+</details>	
 	
 	
 </p>
