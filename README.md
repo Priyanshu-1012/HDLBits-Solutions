@@ -88,7 +88,14 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 </p>
 </details>	
 	
-
+<details><summary>Procedures</summary>
+<p>
+	
+:white_check_mark: [Alwaysblock1](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)
+	
+	
+</p>
+</details>
 	
 	
 </p>
@@ -506,5 +513,18 @@ module top_module(
     add16 inst1(.a(a[15:0]), .b(xorout[15:0]), .cin(sub), .cout(c), .sum(sum[15:0]));
     add16 inst2(.a(a[31:16]), .b(xorout[31:16]), .cin(c), .cout(c2), .sum(sum[31:16]));
 
+endmodule
+```
+## Alwaysblock1
+```verilog
+// synthesis verilog_input_version verilog_2001
+module top_module(
+    input a, 
+    input b,
+    output wire out_assign,
+    output reg out_alwaysblock
+);
+assign out_assign = a & b;
+always @(*) out_alwaysblock = a & b;
 endmodule
 ```
