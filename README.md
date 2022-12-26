@@ -97,6 +97,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Always if](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if)
 	
+:white_check_mark: [Always if2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if2)
+	
 	
 </p>
 </details>
@@ -570,4 +572,29 @@ module top_module(
     
 endmodule
 
+```
+## Always if2
+```verilog
+// synthesis verilog_input_version verilog_2001
+module top_module (
+    input      cpu_overheated,
+    output reg shut_off_computer,
+    input      arrived,
+    input      gas_tank_empty,
+    output reg keep_driving  ); //
+
+    always @(*) begin
+        shut_off_computer=cpu_overheated; 
+    end
+
+    always @(*) begin
+        if (~arrived && ~gas_tank_empty) begin
+           keep_driving = 1;
+          end
+         else begin
+          keep_driving = 0;
+        end
+    end
+
+endmodule
 ```
