@@ -1,4 +1,4 @@
-Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
+Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 
 # HDLBits-Solutions
 
