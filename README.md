@@ -485,7 +485,8 @@ endmodule
 ```
 method2 (XOR as programmable inverter)
 
-![image](https://user-images.githubusercontent.com/39450902/209582215-1a270e82-de31-4b48-9c26-03a11f0957ba.png)
+![image](https://user-images.githubusercontent.com/39450902/209582275-f3619c07-8380-4e14-bb1d-aa5c209ef690.png)
+
 
 ```verilog
 module top_module(
