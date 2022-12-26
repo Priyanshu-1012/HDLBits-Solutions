@@ -2,7 +2,7 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 # HDLBits-Solutions
 
 ## Problems 
-Markup: [Step one](#Step one "Goto Step one") 
+[Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
 
 
 
