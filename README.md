@@ -242,3 +242,87 @@ assign out=~{{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}}^{5{a,b,c,d,e}};
 endmodule
 ```
 ## Module
+```
+module top_module ( input a, input b, output out );
+    mod_a inst1 (.in1(a), .in2(b), .out(out));
+   
+    
+endmodule
+```
+## Module pos
+```
+module top_module ( 
+    input a, 
+    input b, 
+    input c,
+    input d,
+    output out1,
+    output out2
+);
+    mod_a inst1(out1,out2,a,b,c,d);
+endmodule
+```
+## Module name
+```
+module top_module ( 
+    input a, 
+    input b, 
+    input c,
+    input d,
+    output out1,
+    output out2
+);
+    mod_a inst1(.in1(a), .in2(b), .in3(c), .in4(d), .out1(out1), .out2(out2) );
+endmodule
+```
+## Module shift
+```
+module top_module ( input clk, input d, output q );
+    wire q1,q2;
+    my_dff inst1(.clk(clk), .d(d), .q(q1));
+    my_dff inst2(.clk(clk), .d(q1), .q(q2));
+    my_dff inst3(.clk(clk), .d(q2), .q(q));
+endmodule
+```
+## Module shift8
+```
+module top_module ( 
+    input clk, 
+    input [7:0] d, 
+    input [1:0] sel, 
+    output [7:0] q 
+);
+    wire [7:0]q1,q2,q3;
+    
+    my_dff8 inst1(.clk(clk), .d(d), .q(q1));
+    my_dff8 inst2(.clk(clk), .d(q1), .q(q2));
+    my_dff8 inst3(.clk(clk), .d(q2), .q(q3));
+    
+    always @(*)    //this is for combinational block
+		case(sel)
+			2'h0: q = d;
+			2'h1: q = q1;
+			2'h2: q = q2;
+			2'h3: q = q3;
+		endcase
+
+endmodule
+```
+## Module add
+```
+module top_module(
+    input [31:0] a,
+    input [31:0] b,
+    output [31:0] sum
+);
+    wire c1,c2;
+
+    add16 inst1(.a(a[15:0]), .b(b[15:0]), .cin(1'b0), .sum(sum[15:0]), .cout(c1));
+    add16 inst2(.a(a[31:16]), .b(b[31:16]), .cin(c1), .sum(sum[31:16]), .cout(c2));
+
+endmodule
+```
+## Module fadd
+```
+
+```
