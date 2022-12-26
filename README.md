@@ -5,9 +5,9 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 <details><summary>Getting Started</summary>
 <p>
 
-[Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
+1. [Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
 
-[Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
+2. [Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
 
 </p>
 </details>
