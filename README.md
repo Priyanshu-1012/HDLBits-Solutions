@@ -9,7 +9,7 @@ Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 	
 :white_check_mark: [Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
 
-- [Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
+:white_check_mark: [Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
 
 </p>
 </details>
@@ -20,21 +20,21 @@ Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 <p>
 	<details><summary>Basics</summary><p>
 	
-- [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
+:white_check_mark: [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
 	
-- [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
+:white_check_mark: [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
 	
-- [Notgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
+:white_check_mark: [Notgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
 	
-- [Andgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
+:white_check_mark: [Andgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
 	
-- [Norgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
+:white_check_mark: [Norgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
 	
-- [Xnorgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
+:white_check_mark: [Xnorgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
 	
-- [Wire decl](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
+:white_check_mark: [Wire decl](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
 	
-- [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
+:white_check_mark: [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
 
 </p>
 </details>
@@ -43,23 +43,23 @@ Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 <details><summary>Vectors</summary>
 <p>
 	
-- [Vector0](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector0) 
+:white_check_mark: [Vector0](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector0) 
 
-- [Vector1](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector1)
+:white_check_mark: [Vector1](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector1)
 		       
-- [Vector2](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector2)
+:white_check_mark: [Vector2](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector2)
 		        
-- [Vectorgates](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorgates)
+:white_check_mark: [Vectorgates](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorgates)
 		    
-- [Gates4](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates4)
+:white_check_mark: [Gates4](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates4)
 		    
-- [Vector3](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+:white_check_mark: [Vector3](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
 		    
-- [Vectorr](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorr)
+:white_check_mark: [Vectorr](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorr)
 		    
-- [Vector4](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector4)
+:white_check_mark: [Vector4](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector4)
 		    
-- [Vector5](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+:white_check_mark: [Vector5](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
 </p>
 </details>
 
@@ -67,20 +67,22 @@ Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 <details><summary>Modules:Hierarchy</summary>
 <p>
 
-- [Module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module)
+:white_check_mark: [Module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module)
 
-- [Module pos](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos)
+:white_check_mark: [Module pos](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos)
 
-- [Module name](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-name)
+:white_check_mark: [Module name](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-name)
 
-- [Module shift](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift)
+:white_check_mark: [Module shift](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift)
 
-- [Module shift8](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
+:white_check_mark: [Module shift8](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
 
-- [Module add](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
+:white_check_mark: [Module add](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
 
 </p>
 </details>	
+	
+
 	
 	
 </p>
