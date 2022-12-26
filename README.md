@@ -7,7 +7,7 @@ Goto HDLBits :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one)
 <details><summary>Getting Started</summary>
 <p>
 	
-- [Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
+:white_check_mark: [Step one](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
 
 - [Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
 
