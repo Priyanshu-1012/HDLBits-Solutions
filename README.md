@@ -94,6 +94,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 :white_check_mark: [Alwaysblock1](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)
 
 :white_check_mark: [Alwaysblock2](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock2)
+
+:white_check_mark: [Always if](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if)
 	
 	
 </p>
@@ -546,5 +548,26 @@ endmodule
 ```
 ## Always if
 ```verilog
+
+module top_module(
+    input a,
+    input b,
+    input sel_b1,
+    input sel_b2,
+    output wire out_assign,
+    output reg out_always   );
+    
+    assign out_assign= sel_b2 ? (sel_b1 ? b : a) : a;
+    
+    always @(*) begin
+        if(sel_b1 && sel_b2) begin
+            out_always=b;
+        end
+        else begin
+            out_always=a;
+        end
+    end
+    
+endmodule
 
 ```
