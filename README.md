@@ -1,10 +1,8 @@
 # HDLBits-Solutions
 
-Problems | 
-------------- | 
-
+Problems 
 Markup: [Step one](#Step one "Goto Step one") | 
-Content Cell  | 
+
 
 
 ## Step one
