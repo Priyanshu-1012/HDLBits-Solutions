@@ -36,8 +36,8 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 	
 - [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
 
-               </p>
-              </details>
+</p>
+</details>
 
 	
 <details><summary>Vectors</summary>
