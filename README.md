@@ -9,7 +9,7 @@ module top_module( output one );
 endmodule
 ```
 ## Zero
-```
+```verilog
 module top_module(
     output zero
 );
@@ -17,13 +17,13 @@ assign zero=0;
 endmodule
 ```
 ## Wire
-```
+```verilog
 module top_module( input in, output out );
 assign out=in;
 endmodule
 ```
 ## Wire4
-```
+```verilog
 module top_module( 
     input a,b,c,
     output w,x,y,z );
@@ -31,13 +31,13 @@ assign w=a,x=b,y=b,z=c;
 endmodule
 ```
 ## Notgate
-```
+```verilog
 module top_module( input in, output out );
 assign out=~in;
 endmodule
 ```
 ## Andgate
-```
+```verilog
 module top_module( 
     input a, 
     input b, 
@@ -46,7 +46,7 @@ assign out=a&b;
 endmodule
 ```
 ## Norgate
-```
+```verilog
 module top_module( 
     input a, 
     input b, 
@@ -55,7 +55,7 @@ module top_module(
 endmodule
 ```
 ## Xnorgate
-```
+```verilog
 module top_module( 
     input a, 
     input b, 
@@ -64,7 +64,7 @@ module top_module(
 endmodule
 ```
 ## Wire decl
-```
+```verilog
 `default_nettype none
 module top_module(
     input a,
@@ -83,7 +83,7 @@ wire andab,andcd,orout;
 endmodule
 ```
 ## 7458
-```
+```verilog
 module top_module ( 
     input p1a, p1b, p1c, p1d, p1e, p1f,
     output p1y,
@@ -102,7 +102,7 @@ wire andp2ab,andp2cd,andp1abc,andp1def;
 endmodule
 ```
 ## Vector0
-```
+```verilog
 module top_module ( 
     input wire [2:0] vec,
     output wire [2:0] outv,
@@ -118,7 +118,7 @@ module top_module (
 endmodule
 ```
 ## Vector1
-```
+```verilog
 module top_module( 
     input wire [15:0] in,
     output wire [7:0] out_hi,
@@ -130,7 +130,7 @@ endmodule
 
 ```
 ## Vector2
-```
+```verilog
 module top_module( 
     input [31:0] in,
     output [31:0] out );
@@ -143,7 +143,7 @@ module top_module(
 endmodule
 ```
 ## Vectorgates
-```
+```verilog
 module top_module( 
     input [2:0] a,
     input [2:0] b,
@@ -159,7 +159,7 @@ module top_module(
 endmodule
 ```
 ## Gates4
-```
+```verilog
 module top_module( 
     input [3:0] in,
     output out_and,
@@ -172,7 +172,7 @@ module top_module(
 endmodule
 ```
 ## Vector3
-```
+```verilog
 module top_module (
     input [4:0] a, b, c, d, e, f,
     output [7:0] w, x, y, z );//
@@ -187,7 +187,7 @@ assign com[31:0]={a[4:0],b[4:0],c[4:0],d[4:0],e[4:0],f[4:0],2'b11};
 endmodule
 ```
 ## Vectorr
-```
+```verilog
 module top_module( 
     input [7:0] in,
     output [7:0] out
@@ -196,7 +196,7 @@ module top_module(
 endmodule
 ```
 method2 (using loop)
-```
+```verilog
 module top_module( 
     input [7:0] in,
     output [7:0] out
@@ -208,7 +208,7 @@ module top_module(
 endmodule
 ```
 method3 (using generate for-loop)
-```
+```verilog
 module top_module( 
     input [7:0] in,
     output [7:0] out
@@ -232,7 +232,7 @@ module top_module (
 endmodule
 ```
 ## Vector5
-```
+```verilog
 module top_module (
     input a, b, c, d, e,
     output [24:0] out );
@@ -242,7 +242,7 @@ assign out=~{{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}}^{5{a,b,c,d,e}};
 endmodule
 ```
 ## Module
-```
+```verilog
 module top_module ( input a, input b, output out );
     mod_a inst1 (.in1(a), .in2(b), .out(out));
    
@@ -250,7 +250,7 @@ module top_module ( input a, input b, output out );
 endmodule
 ```
 ## Module pos
-```
+```verilog
 module top_module ( 
     input a, 
     input b, 
@@ -263,7 +263,7 @@ module top_module (
 endmodule
 ```
 ## Module name
-```
+```verilog
 module top_module ( 
     input a, 
     input b, 
@@ -276,7 +276,7 @@ module top_module (
 endmodule
 ```
 ## Module shift
-```
+```verilog
 module top_module ( input clk, input d, output q );
     wire q1,q2;
     my_dff inst1(.clk(clk), .d(d), .q(q1));
@@ -285,7 +285,7 @@ module top_module ( input clk, input d, output q );
 endmodule
 ```
 ## Module shift8
-```
+```verilog
 module top_module ( 
     input clk, 
     input [7:0] d, 
@@ -309,7 +309,7 @@ module top_module (
 endmodule
 ```
 ## Module add
-```
+```verilog
 module top_module(
     input [31:0] a,
     input [31:0] b,
@@ -323,6 +323,6 @@ module top_module(
 endmodule
 ```
 ## Module fadd
-```
+```verilog
 
 ```
