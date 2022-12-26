@@ -92,6 +92,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <p>
 	
 :white_check_mark: [Alwaysblock1](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)
+
+:white_check_mark: [Alwaysblock2](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock2)
 	
 	
 </p>
@@ -517,7 +519,6 @@ endmodule
 ```
 ## Alwaysblock1
 ```verilog
-// synthesis verilog_input_version verilog_2001
 module top_module(
     input a, 
     input b,
@@ -527,4 +528,23 @@ module top_module(
 assign out_assign = a & b;
 always @(*) out_alwaysblock = a & b;
 endmodule
+```
+## Alwaysblock2
+```verilog
+// synthesis verilog_input_version verilog_2001
+module top_module(
+    input clk,
+    input a,
+    input b,
+    output wire out_assign,
+    output reg out_always_comb,
+    output reg out_always_ff   );
+assign out_assign = a ^ b;
+always @(*) out_always_comb = a ^ b;
+    always @(posedge clk) out_always_ff <= a ^ b;
+endmodule
+```
+## Always if
+```verilog
+
 ```
