@@ -575,7 +575,6 @@ endmodule
 ```
 ## Always if2
 ```verilog
-// synthesis verilog_input_version verilog_2001
 module top_module (
     input      cpu_overheated,
     output reg shut_off_computer,
@@ -597,4 +596,8 @@ module top_module (
     end
 
 endmodule
+```
+## Always case
+```verilog
+
 ```
