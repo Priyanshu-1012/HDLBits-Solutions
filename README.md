@@ -66,6 +66,7 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 
 <details><summary>Modules:Hierarchy</summary>
 <p>
+
 - [Module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module)
 
 - [Module pos](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos)
@@ -77,6 +78,7 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 - [Module shift8](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
 
 - [Module add](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
+
 </p>
 </details>	
 	
@@ -91,7 +93,7 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 
 
 ## Step one
-Markup :  # Step one #
+
 ```verilog
 module top_module( output one );
 
