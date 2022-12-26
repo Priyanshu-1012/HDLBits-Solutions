@@ -19,28 +19,61 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 <details><summary>Verilog Language</summary>
 <p>
 	
-<details><summary>Basics</summary>
-<p>
 	
-- [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
 	
-- [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
 	
-- [Notgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
+         <details><summary>Basics</summary>
+            <p>
 	
-- [Andgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
+		     - [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
 	
-- [Norgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
+                     - [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
 	
-- [Xnorgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
+                     - [Notgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
 	
-- [Wire decl](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
+                     - [Andgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
 	
-- [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
+                     - [Norgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
+	
+                     - [Xnorgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
+	
+		     - [Wire decl](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
+	
+		     - [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
 
-</p>
-</details>
+               </p>
+              </details>
 
+	
+          <details><summary>Vectors</summary>
+            <p>
+	
+			- [Vector0](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector0) 
+
+			- [Vector1](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector1)
+		       
+		        - [Vector2](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector2)
+		        
+		        - [Vectorgates](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorgates)
+		    
+		        - [Gates4](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates4)
+		    
+		        - [Vector3](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+		    
+		        - [Vectorr](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorr)
+		    
+		        - [Vector4](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector4)
+		    
+		        - [Vector5](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+		    
+		        
+
+               </p>
+	       </details>
+	
+	
+	
+	
 </p>
 </details>
 
