@@ -100,6 +100,10 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 :white_check_mark: [Always if2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if2)
 	
 :white_check_mark: [Always case](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case)
+
+:white_check_mark: [Always case2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case2)
+
+:white_check_mark: [Always case2](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez)
 	
 	
 </p>
@@ -626,4 +630,28 @@ module top_module (
     end
 
 endmodule
+```
+## Always case2
+```verilog
+// synthesis verilog_input_version verilog_2001
+module top_module (
+    input [3:0] in,
+    output reg [1:0] pos  );
+    always @(*)begin
+        
+        if(in[0]==1)
+            pos=0;
+        else if(in[1]==1)
+            pos=1;
+        else if(in[2]==1)
+            pos=2; 
+        else if(in[3]==1)
+            pos=3;
+        else pos=0;
+    end
+endmodule
+```
+## Always casez
+```verilog
+
 ```
