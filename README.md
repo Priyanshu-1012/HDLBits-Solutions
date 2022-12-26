@@ -25,6 +25,18 @@ Goto HDLBits Verilog practice :point_right: [click here](https://hdlbits.01xz.ne
 - [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
 	
 - [Wire4](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
+	
+- [Notgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
+	
+- [Andgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
+	
+- [Norgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
+	
+- [Xnorgate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
+	
+- [Wire decl](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
+	
+- [7458](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
 
 </p>
 </details>
