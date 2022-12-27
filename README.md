@@ -720,5 +720,17 @@ endmodule
 ```
 ## Conditional [Conditional ternary operator]
 ```verilog
+module top_module (
+    input [7:0] a, b, c, d,
+    output [7:0] min);//
+    wire [7:0]abmin,cdmin;
+
+    assign abmin = a>b ? b : a;
+    assign cdmin = c>d ? d : c;
+    assign min = abmin>cdmin ? cdmin : abmin;
+endmodule
+```
+## Reduction [Reduction operators]
+```verilog
 
 ```
