@@ -113,6 +113,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>More verilog features</summary>
 <p>	
 	
+	
 :white_check_mark: [Conditional ternary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-ternary-operator)	
 
 	
@@ -709,11 +710,11 @@ module top_module (
    always @* begin
     up=0;down=0;right=0;left=0;
       case(scancode)
-        16'he06b :	left =1;
-        16'he072 :	down=1;
-		16'he074 :	right =1;
-		16'he075 :	up =1;
-        endcase
+        16'he06b : left = 1;
+        16'he072 : down = 1;
+	16'he074 : right = 1;
+	16'he075 : up = 1;
+      endcase
    end
 endmodule
 ```
