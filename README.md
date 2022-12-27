@@ -116,6 +116,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 	
 :white_check_mark: [Conditional ternary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-ternary-operator)	
 
+:white_check_mark: [Reduction operators](https://github.com/Priyanshu-1012/HDLBits-Solutions#reduction-reduction-operators)
 	
 </p>
 </details>
@@ -731,6 +732,14 @@ module top_module (
 endmodule
 ```
 ## Reduction [Reduction operators]
+```verilog
+module top_module (
+    input [7:0] in,
+    output parity); 
+    assign parity= ^in[7:0];
+endmodule
+```
+## Gates100 [Reduction: Even wider gates]
 ```verilog
 
 ```
