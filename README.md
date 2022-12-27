@@ -120,6 +120,9 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Reduction: Even wider gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates100-reduction-even-wider-gates)
 
+:white_check_mark: [Combinational for-loop: Vector reversal 2](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector100r-combinational-for-loop-vector-reversal-2)
+	
+	
 	
 </p>
 </details>
@@ -756,6 +759,19 @@ module top_module(
 endmodule
 ```
 ## Vector100r [Combinational for-loop: Vector reversal 2]
+```verilog
+module top_module( 
+    input [99:0] in,
+    output [99:0] out
+);
+    integer i;
+always @* begin
+    for(i=99;i>=0;i=i-1) 
+        out[99-i]=in[i];
+    end
+endmodule
+```
+## Popcount255 [Combinational for-loop: 255-bit population count]
 ```verilog
 
 ```
