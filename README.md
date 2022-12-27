@@ -110,7 +110,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 <details><summary>More verilog features</summary>
 <p>	
-:white_check_mark: [Conditional temporary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)	
+:white_check_mark: [Conditional temporary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-temporary-operator)	
 
 	
 </p>
