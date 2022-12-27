@@ -117,6 +117,9 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 :white_check_mark: [Conditional ternary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-ternary-operator)	
 
 :white_check_mark: [Reduction operators](https://github.com/Priyanshu-1012/HDLBits-Solutions#reduction-reduction-operators)
+
+:white_check_mark: [Reduction: Even wider gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates100-reduction-even-wider-gates)
+
 	
 </p>
 </details>
@@ -740,6 +743,19 @@ module top_module (
 endmodule
 ```
 ## Gates100 [Reduction: Even wider gates]
+```verilog
+module top_module( 
+    input [99:0] in,
+    output out_and,
+    output out_or,
+    output out_xor 
+);
+    assign out_and = &in[99:0];
+    assign out_or = |in[99:0];
+    assign out_xor = ^in[99:0];
+endmodule
+```
+## Vector100r [Combinational for-loop: Vector reversal 2]
 ```verilog
 
 ```
