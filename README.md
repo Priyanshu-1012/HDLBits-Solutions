@@ -7,9 +7,9 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>Getting Started</summary>
 <p>
 	
-:white_check_mark: [Getting Started](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one) 
+:white_check_mark: [Getting Started](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one-getting-started) 
 
-:white_check_mark: [Output Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero)
+:white_check_mark: [Output Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero-output-zero)
 
 </p>
 </details>
@@ -20,21 +20,21 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <p>
 	<details><summary>Basics</summary><p>
 	
-:white_check_mark: [Simple wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire)
+:white_check_mark: [Simple wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-simple-wire)
 	
-:white_check_mark: [Four Wires](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4)
+:white_check_mark: [Four Wires](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire4-four-wires)
 	
-:white_check_mark: [Inverter](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate)
+:white_check_mark: [Inverter](https://github.com/Priyanshu-1012/HDLBits-Solutions#notgate-inverter)
 	
-:white_check_mark: [AND gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate)
+:white_check_mark: [AND gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#andgate-and-gate)
 	
-:white_check_mark: [NOR gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate)
+:white_check_mark: [NOR gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#norgate-nor-gate)
 	
-:white_check_mark: [XNOR gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate)
+:white_check_mark: [XNOR gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#xnorgate-xnor-gate)
 	
-:white_check_mark: [Declaring wires](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl)
+:white_check_mark: [Declaring wires](https://github.com/Priyanshu-1012/HDLBits-Solutions#wire-decl-declaring-wires)
 	
-:white_check_mark: [7458 chip](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458)
+:white_check_mark: [7458 chip](https://github.com/Priyanshu-1012/HDLBits-Solutions#7458-7458-chip)
 
 </p>
 </details>
@@ -43,23 +43,23 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>Vectors</summary>
 <p>
 	
-:white_check_mark: [Vectors](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector0) 
+:white_check_mark: [Vectors](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector0-vectors) 
 
-:white_check_mark: [Vectors in more detail](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector1)
+:white_check_mark: [Vectors in more detail](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector1-vectors-in-more-detail)
 		       
-:white_check_mark: [Vector part select](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector2)
+:white_check_mark: [Vector part select](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector2-vector-part-select)
 		        
-:white_check_mark: [Bitwise operators](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorgates)
+:white_check_mark: [Bitwise operators](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorgates-bitwise-operators)
 		    
-:white_check_mark: [Four-input gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates4)
+:white_check_mark: [Four-input gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates4-4-input-gates)
 		    
-:white_check_mark: [Vector concantenation operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+:white_check_mark: [Vector concantenation operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3-vector-concatenation-operator)
 		    
-:white_check_mark: [Vector reversal 1](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorr)
+:white_check_mark: [Vector reversal 1](https://github.com/Priyanshu-1012/HDLBits-Solutions#vectorr-vector-reversal-1)
 		    
-:white_check_mark: [Replication operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector4)
+:white_check_mark: [Replication operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector4-replication-operator)
 		    
-:white_check_mark: [More replication](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector3)
+:white_check_mark: [More replication](https://github.com/Priyanshu-1012/HDLBits-Solutions#vector5-more-replication)
 </p>
 </details>
 
@@ -67,23 +67,23 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>Modules:Hierarchy</summary>
 <p>
 
-:white_check_mark: [Modules](https://github.com/Priyanshu-1012/HDLBits-Solutions#module)
+:white_check_mark: [Modules](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-modules)
 
-:white_check_mark: [Connecting ports by position](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos)
+:white_check_mark: [Connecting ports by position](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-pos-connecting-ports-by-position)
 
-:white_check_mark: [Connecting ports by name](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-name)
+:white_check_mark: [Connecting ports by name](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-name-connecting-ports-by-name)
 
-:white_check_mark: [Three module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift)
+:white_check_mark: [Three module](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift-three-modules)
 
-:white_check_mark: [Modules and vectors ](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8)
+:white_check_mark: [Modules and vectors](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-shift8-modules-and-vectors)
 
-:white_check_mark: [Adder 1](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add)
+:white_check_mark: [Adder 1](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-add-adder-1)
 	
-:white_check_mark: [Adder 2](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-fadd)
+:white_check_mark: [Adder 2](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-fadd-adder-2)
 
-:white_check_mark: [Carry-select adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-cseladd)
+:white_check_mark: [Carry-select adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-cseladd-carry-select-adder)
 	
-:white_check_mark: [Adder-subtractor](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-addsub)
+:white_check_mark: [Adder-subtractor](https://github.com/Priyanshu-1012/HDLBits-Solutions#module-addsub-adder-subtractor)
 	
 </p>
 </details>	
@@ -91,19 +91,21 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>Procedures</summary>
 <p>
 	
-:white_check_mark: [Always blocks(combinational)](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)
+:white_check_mark: [Always blocks(combinational)](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1-always-block-combinational)
 
-:white_check_mark: [Always blocks(clocked)](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock2)
+:white_check_mark: [Always blocks(clocked)](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock2-always-block-clocked)
 
-:white_check_mark: [If statement](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if)
+:white_check_mark: [If statement](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if-if-statement)
 	
-:white_check_mark: [If statement latches](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if2)
+:white_check_mark: [If statement latches](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-if2-if-statement-latches)
 	
-:white_check_mark: [Case statement](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case)
+:white_check_mark: [Case statement](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case-case-statement)
 
-:white_check_mark: [Priority encoder](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case2)
+:white_check_mark: [Priority encoder](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-case2-priority-encoder)
 
-:white_check_mark: [Priority encoder with casez](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez)
+:white_check_mark: [Priority encoder with casez](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez-priority-encoder-with-casez)
+
+:white_check_mark: [Avoiding latches](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-nolatches-avoiding-latches)
 	
 </p>
 </details>
@@ -111,7 +113,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>More verilog features</summary>
 <p>	
 	
-:white_check_mark: [Conditional temporary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-temporary-operator)	
+:white_check_mark: [Conditional ternary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#conditional-conditional-ternary-operator)	
 
 	
 </p>
@@ -695,7 +697,7 @@ module top_module (
 endmodule
 
 ```
-## Always nolatches [Avoid latches]
+## Always nolatches [Avoiding latches]
 ```verilog
 module top_module (
     input [15:0] scancode,
@@ -715,7 +717,7 @@ module top_module (
    end
 endmodule
 ```
-## Conditional [Conditional temporary operator]
+## Conditional [Conditional ternary operator]
 ```verilog
 
 ```
