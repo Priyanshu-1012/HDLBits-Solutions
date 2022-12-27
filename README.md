@@ -749,6 +749,7 @@ module top_module (
 endmodule
 ```
 ## Gates100 [Reduction: Even wider gates]
+
 ```verilog
 module top_module( 
     input [99:0] in,
@@ -762,6 +763,7 @@ module top_module(
 endmodule
 ```
 ## Vector100r [Combinational for-loop: Vector reversal 2]
+
 ```verilog
 module top_module( 
     input [99:0] in,
@@ -775,6 +777,7 @@ always @* begin
 endmodule
 ```
 ## Popcount255 [Combinational for-loop: 255-bit population count]
+
 ```verilog
 module top_module( 
     input [254:0] in,
@@ -790,6 +793,7 @@ module top_module(
 endmodule
 ```
 ## Adder100i [Generate for-loop: 100-bit binary adder 2]
+
 ```verilog
 module top_module( 
     input [99:0] a, b,
