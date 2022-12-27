@@ -132,13 +132,29 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 </p>
 </details>
 	
+</p>
+</details>
+
+<details><summary>Circuits</summary>
+<p>
+
+<details><summary>Combinational Logic</summary>
+<p>
+
+<details><summary>Basic Gates</summary>
+<p>
+	//------------------------------------------------------------here
+</p>
+</details>	
 	
 </p>
 </details>
 
-
-
-
+	
+	
+	
+</p>
+</details>
 
 
 
@@ -816,6 +832,248 @@ module top_module(
 endmodule
 ```
 ## Bcdadd100 [Generate for-loop: 100-digit BCD adder]
+
+```verilog
+
+```
+## Exams/m2014 q4h [Wire]
+
+```verilog
+module top_module (
+    input in,
+    output out);
+    
+assign out=in;
+
+endmodule
+```
+## Exams/m2014 q4i [GND]
+
+```verilog
+module top_module (
+    output out);
+    
+assign out=0;
+
+endmodule
+```
+##  Exams/m2014 q4e [NOR]
+
+```verilog
+module top_module (
+    input in1,
+    input in2,
+    output out);
+    
+    assign out=~(in1|in2);
+    
+endmodule
+```
+## Exams/m2014 q4f [Another gate]
+
+```verilog
+module top_module (
+    input in1,
+    input in2,
+    output out);
+    
+assign out=in1&~in2;
+
+endmodule
+```
+## Exams/m2014 q4g [Two gates]
+
+```verilog
+module top_module (
+    input in1,
+    input in2,
+    input in3,
+    output out);
+
+    wire xnorout;
+    
+    assign xnorout = ~(in1 ^ in2);
+    assign out = xnorout ^ in3;
+    
+endmodule
+```
+## Gates [More logic gates]
+
+```verilog
+module top_module( 
+    input a, b,
+    output out_and,
+    output out_or,
+    output out_xor,
+    output out_nand,
+    output out_nor,
+    output out_xnor,
+    output out_anotb
+);
+    assign out_and= a & b;
+	assign out_or= a | b;
+	assign out_xor= a ^ b;
+    assign out_nand= ~(a & b);
+    assign out_nor= ~(a | b);
+    assign out_xnor= ~(a ^ b);
+	assign out_anotb= a & ~b;
+
+    
+endmodule
+```
+## 7420 [7420 chip]
+
+```verilog
+module top_module ( 
+    input p1a, p1b, p1c, p1d,
+    output p1y,
+    input p2a, p2b, p2c, p2d,
+    output p2y );
+
+    assign p1y = ~(p1a & p1b & p1c & p1d);
+    assign p2y = ~(p2a & p2b & p2c & p2d);
+
+endmodule
+```
+## Truthtable1 [Truth tables]
+
+```verilog
+module top_module( 
+    input x3,
+    input x2,
+    input x1,  // three inputs
+    output f   // one output
+);
+ 
+    assign f=(~x3 & x2 & ~x1) | (~x3 & x2 & x1) | (x3 & ~x2 & x1) | (x3 & x2 & x1);
+    
+endmodule
+```
+## Mt2015 eq2 [Two-bit equality]
+
+```verilog
+module top_module ( input [1:0] A, input [1:0] B, output z ); 
+    always @* begin
+        if(A==B)
+            z=1;
+    else z=0;
+    end
+endmodule
+```
+## Mt2015 q4a [Simple circuit A]
+
+```verilog
+module top_module (input x, input y, output z);
+    assign z = (x^y) & x;
+endmodule
+```
+## Mt2015 q4b [Simple circuit B]
+
+```verilog
+module top_module ( input x, input y, output z );
+    assign z = ~(x ^ y);
+endmodule
+```
+## Mt2015 q4 [Combine circuits A and B]
+
+```verilog
+module top_module (input x, input y, output z);
+wire z1,z2,z3,z4,zor,zand;
+    moda inst1(x,y,z1);
+    moda inst2(x,y,z2);
+    modb inst3(x,y,z3);
+    modb inst4(x,y,z4);
+    
+    assign zor= z1 | z2;
+    assign zand = z3 & z4;
+    assign z= zor ^ zand;
+    
+endmodule
+   module moda (input x, input y, output z);
+    assign z = (x^y) & x;
+endmodule
+
+    module modb ( input x, input y, output z );
+    assign z = ~(x ^ y);
+endmodule
+```
+## Ringer [Ring or vibrate]
+
+```verilog
+module top_module (
+    input ring,
+    input vibrate_mode,
+    output ringer,       // Make sound
+    output motor         // Vibrate
+);
+	assign ringer = ring & ~vibrate_mode;
+    assign motor = ring & vibrate_mode;
+endmodule
+```
+## Thermostat
+
+```verilog
+module top_module (
+    input too_cold,
+    input too_hot,
+    input mode,
+    input fan_on,
+    output heater,
+    output aircon,
+    output fan
+); 
+    assign heater = mode & too_cold ;
+    assign aircon = ~mode & too_hot ;
+    assign fan = aircon | heater | fan_on;
+        
+endmodule
+```
+## Popcount3 [3-bit population count]
+
+```verilog
+module top_module( 
+    input [2:0] in,
+    output [1:0] out );
+    
+    integer i;
+    always @* begin
+        out=0;
+        for(i=2;i>=0;i=i-1)
+            if(in[i]==1)
+                out=out+1;
+        else ;
+    end
+endmodule
+```
+## Gatesv [Gates and vectors]
+
+```verilog
+module top_module( 
+    input [3:0] in,
+    output [2:0] out_both,
+    output [3:1] out_any,
+    output [3:0] out_different );
+    
+    assign out_both = in[2:0] & in[3:1] ;
+    assign out_any = in[3:1] | in[2:0];
+    assign out_different = in[3:0] ^ {in[0], in[3:1]};
+endmodule
+```
+## Gatesv100 [Even longer vectors]
+
+```verilog
+module top_module( 
+    input [99:0] in,
+    output [98:0] out_both,
+    output [99:1] out_any,
+    output [99:0] out_different );
+    
+    assign out_both = in[98:0] & in[99:1];
+    assign out_any = in[99:1] | in[98:0];
+    assign out_different = in[99:0] ^ {in[0], in[99:1]};
+endmodule
+```
+## Mux2to1 [2-to-1 multiplexer]
 
 ```verilog
 
