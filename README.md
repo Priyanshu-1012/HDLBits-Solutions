@@ -143,7 +143,41 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 <details><summary>Basic Gates</summary>
 <p>
-	//------------------------------------------------------------here
+	
+:white_check_mark: [Wire](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4h-wire)
+	
+:white_check_mark: [GND](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4i-gnd)
+	
+:white_check_mark: [NOR](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4e-nor)
+	
+:white_check_mark: [Another gate](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4f-another-gate)
+	
+:white_check_mark: [Two gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4g-two-gates)
+	
+:white_check_mark: [More logic gates](https://github.com/Priyanshu-1012/HDLBits-Solutions#gates-more-logic-gates)
+	
+:white_check_mark: [7420 chip](https://github.com/Priyanshu-1012/HDLBits-Solutions#7420-7420-chip)
+	
+:white_check_mark: [Truth tables](https://github.com/Priyanshu-1012/HDLBits-Solutions#truthtable1-truth-tables)
+	
+:white_check_mark: [Two-bit equality](https://github.com/Priyanshu-1012/HDLBits-Solutions#mt2015-eq2-two-bit-equality)
+	
+:white_check_mark: [Simple circuit A](https://github.com/Priyanshu-1012/HDLBits-Solutions#mt2015-q4a-simple-circuit-a)
+	
+:white_check_mark: [Simple circuit B](https://github.com/Priyanshu-1012/HDLBits-Solutions#mt2015-q4b-simple-circuit-b)
+	
+:white_check_mark: [Combine circuits A and B](https://github.com/Priyanshu-1012/HDLBits-Solutions#mt2015-q4-combine-circuits-a-and-b)
+	
+:white_check_mark: [Ring or vibrate](https://github.com/Priyanshu-1012/HDLBits-Solutions#ringer-ring-or-vibrate)
+	
+:white_check_mark: [Thermostat](https://github.com/Priyanshu-1012/HDLBits-Solutions#thermostat)
+	
+:white_check_mark: [3-bit population count](https://github.com/Priyanshu-1012/HDLBits-Solutions#popcount3-3-bit-population-count)
+	
+:white_check_mark: [Gates and vectors](https://github.com/Priyanshu-1012/HDLBits-Solutions#gatesv-gates-and-vectors)
+	
+:white_check_mark: [Even longer vectors](https://github.com/Priyanshu-1012/HDLBits-Solutions#gatesv100-even-longer-vectors)
+	
 </p>
 </details>	
 	
