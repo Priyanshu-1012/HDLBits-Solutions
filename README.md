@@ -119,7 +119,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 
 
-## Step one
+## Step one [Getting started]
 
 ```verilog
 module top_module( output one );
@@ -128,7 +128,7 @@ module top_module( output one );
 
 endmodule
 ```
-## Zero
+## Zero [Output zero]
 ```verilog
 module top_module(
     output zero
@@ -136,13 +136,13 @@ module top_module(
 assign zero=0;
 endmodule
 ```
-## Wire
+## Wire [Simple wire]
 ```verilog
 module top_module( input in, output out );
 assign out=in;
 endmodule
 ```
-## Wire4
+## Wire4 [four wires]
 ```verilog
 module top_module( 
     input a,b,c,
@@ -150,13 +150,13 @@ module top_module(
 assign w=a,x=b,y=b,z=c;
 endmodule
 ```
-## Notgate
+## Notgate [Inverter]
 ```verilog
 module top_module( input in, output out );
 assign out=~in;
 endmodule
 ```
-## Andgate
+## Andgate [AND gate]
 ```verilog
 module top_module( 
     input a, 
@@ -165,7 +165,7 @@ module top_module(
 assign out=a&b;
 endmodule
 ```
-## Norgate
+## Norgate [NOR gate]
 ```verilog
 module top_module( 
     input a, 
@@ -174,7 +174,7 @@ module top_module(
     assign out=~(a|b);
 endmodule
 ```
-## Xnorgate
+## Xnorgate [XNOR gate]
 ```verilog
 module top_module( 
     input a, 
@@ -183,7 +183,7 @@ module top_module(
     assign out= ~(a^b);
 endmodule
 ```
-## Wire decl
+## Wire decl [Declaring wires]
 ```verilog
 `default_nettype none
 module top_module(
@@ -202,7 +202,7 @@ wire andab,andcd,orout;
            out_n= ~(orout);
 endmodule
 ```
-## 7458
+## 7458 [7458 chip]
 ```verilog
 module top_module ( 
     input p1a, p1b, p1c, p1d, p1e, p1f,
@@ -221,7 +221,7 @@ wire andp2ab,andp2cd,andp1abc,andp1def;
 
 endmodule
 ```
-## Vector0
+## Vector0 [Vectors]
 ```verilog
 module top_module ( 
     input wire [2:0] vec,
@@ -237,7 +237,7 @@ module top_module (
            o0=vec[0]; 
 endmodule
 ```
-## Vector1
+## Vector1 [Vectors in more detail]
 ```verilog
 module top_module( 
     input wire [15:0] in,
@@ -249,7 +249,7 @@ module top_module(
 endmodule
 
 ```
-## Vector2
+## Vector2 [Vector part select]
 ```verilog
 module top_module( 
     input [31:0] in,
@@ -262,7 +262,7 @@ module top_module(
 
 endmodule
 ```
-## Vectorgates
+## Vectorgates [Bitwise operators]
 ```verilog
 module top_module( 
     input [2:0] a,
@@ -278,7 +278,7 @@ module top_module(
            
 endmodule
 ```
-## Gates4
+## Gates4 [4-input gates]
 ```verilog
 module top_module( 
     input [3:0] in,
@@ -291,7 +291,7 @@ module top_module(
            out_xor=in[3]^in[2]^in[1]^in[0];
 endmodule
 ```
-## Vector3
+## Vector3 [Vector concatenation operator]
 ```verilog
 module top_module (
     input [4:0] a, b, c, d, e, f,
@@ -306,7 +306,7 @@ assign com[31:0]={a[4:0],b[4:0],c[4:0],d[4:0],e[4:0],f[4:0],2'b11};
 
 endmodule
 ```
-## Vectorr
+## Vectorr [Vector reversal 1]
 ```verilog
 module top_module( 
     input [7:0] in,
@@ -341,7 +341,7 @@ module top_module(
 	endgenerate
 endmodule
 ```
-## Vector4
+## Vector4 [Replication operator]
 ```verilog
 module top_module (
     input [7:0] in,
@@ -351,7 +351,7 @@ module top_module (
 
 endmodule
 ```
-## Vector5
+## Vector5 [More replication]
 ```verilog
 module top_module (
     input a, b, c, d, e,
@@ -361,7 +361,7 @@ assign out=~{{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}}^{5{a,b,c,d,e}};
     
 endmodule
 ```
-## Module
+## Module [Modules]
 ```verilog
 module top_module ( input a, input b, output out );
     mod_a inst1 (.in1(a), .in2(b), .out(out));
@@ -369,7 +369,7 @@ module top_module ( input a, input b, output out );
     
 endmodule
 ```
-## Module pos
+## Module pos [Connecting ports by position]
 ```verilog
 module top_module ( 
     input a, 
@@ -382,7 +382,7 @@ module top_module (
     mod_a inst1(out1,out2,a,b,c,d);
 endmodule
 ```
-## Module name
+## Module name [Connecting ports by name]
 ```verilog
 module top_module ( 
     input a, 
@@ -395,7 +395,7 @@ module top_module (
     mod_a inst1(.in1(a), .in2(b), .in3(c), .in4(d), .out1(out1), .out2(out2) );
 endmodule
 ```
-## Module shift
+## Module shift [Three modules]
 ```verilog
 module top_module ( input clk, input d, output q );
     wire q1,q2;
@@ -404,7 +404,7 @@ module top_module ( input clk, input d, output q );
     my_dff inst3(.clk(clk), .d(q2), .q(q));
 endmodule
 ```
-## Module shift8
+## Module shift8 [Modules and vectors]
 ```verilog
 module top_module ( 
     input clk, 
@@ -428,7 +428,7 @@ module top_module (
 
 endmodule
 ```
-## Module add
+## Module add [Adder-1]
 ```verilog
 module top_module(
     input [31:0] a,
@@ -442,7 +442,7 @@ module top_module(
 
 endmodule
 ```
-## Module fadd
+## Module fadd [Adder-2]
 ```verilog
 module top_module (
     input [31:0] a,
@@ -462,7 +462,7 @@ module add1 ( input a, input b, input cin,   output sum, output cout );
  
 endmodule
 ```
-## Module cseladd
+## Module cseladd [Carry-select adder]
 ```verilog
 module top_module(
     input [31:0] a,
@@ -483,7 +483,7 @@ module top_module(
 
 endmodule
 ```
-## Module addsub
+## Module addsub [Adder-subtractor]
 ```verilog
 module top_module(
     input [31:0] a,
@@ -527,7 +527,7 @@ module top_module(
 
 endmodule
 ```
-## Alwaysblock1
+## Alwaysblock1 [Always block (combinational)]
 ```verilog
 module top_module(
     input a, 
@@ -539,7 +539,7 @@ assign out_assign = a & b;
 always @(*) out_alwaysblock = a & b;
 endmodule
 ```
-## Alwaysblock2
+## Alwaysblock2 [Always block (clocked)]
 ```verilog
 // synthesis verilog_input_version verilog_2001
 module top_module(
@@ -554,7 +554,7 @@ always @(*) out_always_comb = a ^ b;
     always @(posedge clk) out_always_ff <= a ^ b;
 endmodule
 ```
-## Always if
+## Always if [If statement]
 ```verilog
 
 module top_module(
@@ -579,7 +579,7 @@ module top_module(
 endmodule
 
 ```
-## Always if2
+## Always if2 [If statement latches]
 ```verilog
 module top_module (
     input      cpu_overheated,
@@ -603,7 +603,7 @@ module top_module (
 
 endmodule
 ```
-## Always case
+## Always case [Case statement]
 ```verilog
 module top_module ( 
     input [2:0] sel, 
@@ -631,7 +631,7 @@ module top_module (
 
 endmodule
 ```
-## Always case2
+## Always case2 [Priority encoder]
 ```verilog
 // synthesis verilog_input_version verilog_2001
 module top_module (
@@ -665,7 +665,25 @@ module top_module (
        end
 endmodule
 ```
-## Always casez
+## Always casez [Priority encoder with casez]
 ```verilog
+// synthesis verilog_input_version verilog_2001
+module top_module (
+    input [7:0] in,
+    output reg [2:0] pos );
+    always @* begin
+        casez(in[7:0])
+       8'bzzzzzzz1 : pos=0;
+       8'bzzzzzz1z : pos=1;
+       8'bzzzzz1zz : pos=2;
+       8'bzzzz1zzz : pos=3;
+       8'bzzz1zzzz : pos=4;
+       8'bzz1zzzzz : pos=5;
+       8'bz1zzzzzz : pos=6;
+       8'b1zzzzzzz : pos=7;
+       default : pos=0;
+        endcase
+    end
+endmodule
 
 ```
