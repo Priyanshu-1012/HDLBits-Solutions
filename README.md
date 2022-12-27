@@ -2,7 +2,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 # HDLBits-Solutions
 
-## Problems 
+## Problems _quick nav_ :small_red_triangle_down:
 
 <details><summary>Getting Started</summary>
 <p>
