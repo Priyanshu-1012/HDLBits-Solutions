@@ -126,8 +126,6 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Generate for-loop: 100-bit binary adder 2](https://github.com/Priyanshu-1012/HDLBits-Solutions#adder100i-generate-for-loop-100-bit-binary-adder-2)
 	
-:white_check_mark: [Generate for-loop: 100-bit binary adder 2](https://github.com/Priyanshu-1012/HDLBits-Solutions#adder100i-generate-for-loop-100-bit-binary-adder-2)
-
 :white_check_mark: [Generate for-loop: 100-digit BCD adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#bcdadd100-generate-for-loop-100-digit-bcd-adder)
 	
 	
