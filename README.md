@@ -813,3 +813,8 @@ module top_module(
     end
 endmodule
 ```
+## Bcdadd100 [Generate for-loop: 100-digit BCD adder]
+
+```verilog
+
+```
