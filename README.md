@@ -105,6 +105,13 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Priority encoder with casez](https://github.com/Priyanshu-1012/HDLBits-Solutions#always-casez)
 	
+</p>
+</details>
+
+<details><summary>More verilog features</summary>
+<p>	
+:white_check_mark: [Conditional temporary operator](https://github.com/Priyanshu-1012/HDLBits-Solutions#alwaysblock1)	
+
 	
 </p>
 </details>
@@ -707,4 +714,7 @@ module top_module (
    end
 endmodule
 ```
-##
+## Conditional [Conditional temporary operator]
+```verilog
+
+```
