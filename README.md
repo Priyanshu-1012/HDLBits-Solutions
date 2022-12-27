@@ -181,6 +181,16 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 </p>
 </details>	
 	
+
+<details><summary>Multiplexers</summary>
+<p>
+	
+--------1----------1---------1--------1----------1--------------1------------1-----------1--------1---------!here	
+</p>
+</details>
+	
+	
+	
 </p>
 </details>
 
