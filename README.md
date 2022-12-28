@@ -201,10 +201,32 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 	
 <details><summary>Arithmetic Circuits</summary>
 <p>
--------------------11-1-1-1-1--1--1--1-1-1------------------11111111111-----------11111111111111------here!	
+
+	
+:white_check_mark: [Half adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#hadd-half-adder)
+	
+:white_check_mark: [Full adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#fadd-full-adder)
+	
+:white_check_mark: [3-bit binary adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#adder3-3-bit-binary-adder)
+	
+:white_check_mark: [Adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q4j-adder)
+	
+:white_check_mark: [Signed addition overflow](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsece241-2014-q1c-signed-addition-overflow)
+	
+:white_check_mark: [100-bit binary adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#adder100-100-bit-binary-adder)
+	
+:white_check_mark: [4-bit BCD adder](https://github.com/Priyanshu-1012/HDLBits-Solutions#bcdadd4-4-bit-bcd-adder)
 	
 </p>
 </details>	
+	
+<details><summary>Karnaugh Map to Circuit</summary>
+<p>
+----------------------111111111111---------------11111111111---------------111111111111111----------------111111111111111----here!	
+	
+</p>
+</details>
+	
 	
 </p>
 </details>
