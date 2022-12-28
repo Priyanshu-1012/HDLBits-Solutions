@@ -184,12 +184,27 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 <details><summary>Multiplexers</summary>
 <p>
+
 	
---------1----------1---------1--------1----------1--------------1------------1-----------1--------1---------!here	
+:white_check_mark: [2-to-1 multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#mux2to1-2-to-1-multiplexer)
+	
+:white_check_mark: [2-to-1 bus multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#mux2to1v-2-to-1-bus-multiplexer)
+	
+:white_check_mark: [9-to-1 multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#mux9to1-9-to-1-multiplexer)
+	
+:white_check_mark: [256-to-1 multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#mux256to1-256-to-1-multiplexer)
+	
+:white_check_mark: [256-to-1 4-bit multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#mux256to1v-256-to-1-4-bit-multiplexer)
+	
 </p>
 </details>
 	
+<details><summary>Arithmetic Circuits</summary>
+<p>
+-------------------11-1-1-1-1--1--1--1-1-1------------------11111111111-----------11111111111111------here!	
 	
+</p>
+</details>	
 	
 </p>
 </details>
