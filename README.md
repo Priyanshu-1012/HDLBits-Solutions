@@ -905,9 +905,11 @@ module top_module(
         genvar i;
         for (i=0; i<100; i=i+1) begin: bcdadd
         if(i==0) begin
-            bcd_fadd inst(a[3:0], b[3:0], cin, couts[0],sum[3:0]); end
+            bcd_fadd inst(a[3:0], b[3:0], cin, couts[0],sum[3:0]);
+	    end
         else begin
-            bcd_fadd insta(a[(4*i+3):(4*i)], b[(4*i+3):(4*i)], couts[i-1],couts[i],sum[(4*i+3):(4*i)]); end
+            bcd_fadd insta(a[(4*i+3):(4*i)], b[(4*i+3):(4*i)], couts[i-1],couts[i],sum[(4*i+3):(4*i)]); 
+	    end
         end
     assign cout=couts[99];
     endgenerate
@@ -1321,6 +1323,25 @@ module top_module(
 endmodule
 ```
 ## Bcdadd4 [4-bit BCD adder]
+
+```verilog
+module top_module ( 
+    input [15:0] a, b,
+    input cin,
+    output cout,
+    output [15:0] sum );
+    
+    wire c1,c2,c3;
+    
+    bcd_fadd inst1(a[3:0], b[3:0], cin, c1, sum[3:0]);
+    bcd_fadd inst2(a[7:4], b[7:4], c1, c2, sum[7:4]);
+    bcd_fadd inst3(a[11:8], b[11:8], c2, c3, sum[11:8]);
+    bcd_fadd inst4(a[15:12], b[15:12], c3, cout, sum[15:12]);
+    
+endmodule
+```
+
+##  kmap1 [3-variable]
 
 ```verilog
 
