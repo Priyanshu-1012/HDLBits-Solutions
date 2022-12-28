@@ -1365,6 +1365,69 @@ endmodule
 
 ##  kmap1 [3-variable]
 
+![image](https://user-images.githubusercontent.com/39450902/209859609-1975e9c1-90e7-4955-9b63-d5df4bf0af74.png)
+
+```verilog
+module top_module(
+    input a,
+    input b,
+    input c,
+    output out  ); 
+
+    assign out = b | c | a;
+    
+endmodule
+```
+
+## kmap2 [4-variable]
+
+![image](https://user-images.githubusercontent.com/39450902/209860400-f1a5230f-9d11-409f-a68d-e9783b29c1bf.png)
+
+```verilog
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out  ); 
+    
+assign out = (~a&~d) | (~b&~c) | (~a&b&c) | (a&c&d);
+    
+endmodule
+```
+## kmap3 [4-variable]
+  
+![image](https://user-images.githubusercontent.com/39450902/209860969-73858b5b-62bd-4164-9578-e7c1058cbab5.png)
+
+```verilog
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out  ); 
+
+    assign out = a | (~b&c) | (b&~c&~d);
+    
+endmodule
+```
+
+## kmap4 [4-variable]
+
+```verilog
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out  ); 
+    
+    assign out = a ^ b ^ c ^ d;
+    
+endmodule
+```
+## Exams/ece241 2013 q2 [Minimum SOP and POS]
+
 ```verilog
 
 ```
