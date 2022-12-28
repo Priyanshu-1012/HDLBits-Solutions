@@ -893,7 +893,25 @@ endmodule
 ## Bcdadd100 [Generate for-loop: 100-digit BCD adder]
 
 ```verilog
-
+module top_module( 
+    input [399:0] a, b,
+    input cin,
+    output cout,
+    output [399:0] sum );
+    
+    wire [99:0]couts;
+  
+    generate 
+        genvar i;
+        for (i=0; i<100; i=i+1) begin: bcdadd
+        if(i==0) begin
+            bcd_fadd inst(a[3:0], b[3:0], cin, couts[0],sum[3:0]); end
+        else begin
+            bcd_fadd insta(a[(4*i+3):(4*i)], b[(4*i+3):(4*i)], couts[i-1],couts[i],sum[(4*i+3):(4*i)]); end
+        end
+    assign cout=couts[99];
+    endgenerate
+endmodule
 ```
 ## Exams/m2014 q4h [Wire]
 
@@ -1198,6 +1216,111 @@ module top_module(
 endmodule
 ```
 ## Hadd [Half adder]
+
+```verilog
+module top_module( 
+    input a, b,
+    output cout, sum );
+    
+	assign sum = a ^ b;
+	assign cout= a & b;
+endmodule
+```
+
+## Fadd [Full adder]
+
+```verilog
+module top_module( 
+    input a, b, cin,
+    output cout, sum );
+
+    assign sum = a ^ b ^ cin;
+    assign cout = a&b | b&cin | cin&a;
+endmodule
+```
+
+## Adder3 [3-bit binary adder]
+
+```verilog
+module top_module( 
+    input [2:0] a, b,
+    input cin,
+    output [2:0] cout,
+    output [2:0] sum );
+
+    fadd inst1(a[0],b[0],cin,cout[0],sum[0]);
+    fadd inst2(a[1],b[1],cout[0],cout[1],sum[1]);
+    fadd inst3(a[2],b[2],cout[1],cout[2],sum[2]);
+    
+endmodule
+
+module fadd( 
+    input a, b, cin,
+    output cout, sum );
+
+    assign sum = a ^ b ^ cin;
+    assign cout = a&b | b&cin | cin&a;
+endmodule
+```
+## Exams/m2014 q4j [Adder]
+
+```verilog
+module top_module (
+    input [3:0] x,
+    input [3:0] y, 
+    output [4:0] sum);
+    
+    wire [2:0]cout;
+    
+    fadd inst1(x[0],y[0],1'b0,cout[0],sum[0]);
+    fadd inst2(x[1],y[1],cout[0],cout[1],sum[1]);
+    fadd inst3(x[2],y[2],cout[1],cout[2],sum[2]);
+    fadd inst4(x[3],y[3],cout[2],sum[4],sum[3]);
+    
+endmodule
+
+module fadd( 
+    input a, b, cin,
+    output cout, sum );
+
+    assign sum = a ^ b ^ cin;
+    assign cout = a&b | b&cin | cin&a;
+endmodule
+```
+
+## Exams/ece241 2014 q1c [Signed addition overflow]
+
+```verilog
+module top_module (
+    input [7:0] a,
+    input [7:0] b,
+    output [7:0] s,
+    output overflow
+); //
+ 
+     assign s = a+b;
+    assign overflow = (a[7] & b[7] & ~s[7]) | (~a[7] & ~b[7] & s[7]);
+
+endmodule
+```
+## Adder100 [100-bit binary adder]
+
+```verilog
+module top_module( 
+    input [99:0] a, b,
+    input cin,
+    output cout,
+    output [99:0] sum ); 
+    
+ reg [100:0]temp;
+
+	assign temp = a + b + cin; 
+    assign sum[99:0]=temp[99:0];
+    assign cout=temp[100]; 
+    
+endmodule
+```
+## Bcdadd4 [4-bit BCD adder]
 
 ```verilog
 
