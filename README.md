@@ -222,7 +222,24 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 	
 <details><summary>Karnaugh Map to Circuit</summary>
 <p>
-----------------------111111111111---------------11111111111---------------111111111111111----------------111111111111111----here!	
+	
+	
+:white_check_mark: [3-variable](https://github.com/Priyanshu-1012/HDLBits-Solutions#kmap1-3-variable)
+	
+:white_check_mark: [4-variable](https://github.com/Priyanshu-1012/HDLBits-Solutions#kmap2-4-variable)
+	
+:white_check_mark: [4-variable](https://github.com/Priyanshu-1012/HDLBits-Solutions#kmap3-4-variable)
+	
+:white_check_mark: [4-variable](https://github.com/Priyanshu-1012/HDLBits-Solutions#kmap4-4-variable)
+	
+:white_check_mark: [Minimum SOP and POS](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsece241-2013-q2-minimum-sop-and-pos)
+	
+:white_check_mark: [Karnaugh map](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsm2014-q3-karnaugh-map)
+	
+:white_check_mark: [Karnaugh map](https://github.com/Priyanshu-1012/HDLBits-Solutions#exams2012-q1g-karnaugh-map)
+	
+:white_check_mark: [K-map imlimented with a multiplexer](https://github.com/Priyanshu-1012/HDLBits-Solutions#examsece241-2014-q3-k-map-imlimented-with-a-multiplexer)
+	
 	
 </p>
 </details>
@@ -1466,5 +1483,19 @@ endmodule
 ## Exams/ece241 2014 q3 [K-map imlimented with a multiplexer]
 
 ```verilog
-
+module top_module (
+    input c,
+    input d,
+    output [3:0] mux_in
+); 
+    //solving the kmap give the expression 
+    // f= (ab'd') + (abcd) + (a'b'(c+d))
+    // a and b are select variables
+    
+    assign mux_in[0]= c ? 1 : (d ? 1 : 0)  ;    // c OR d
+    assign mux_in[1]= 0;			// zero
+    assign mux_in[2]= d ? 0 : 1;		// not D
+    assign mux_in[3]= c ? (d ? 1 : 0) : 0;      // c AND D
+    
+endmodule
 ```
