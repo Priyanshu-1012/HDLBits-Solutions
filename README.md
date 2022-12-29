@@ -243,11 +243,29 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 	
 </p>
 </details>
-	
+
 	
 </p>
 </details>
 
+	
+
+<details><summary>Sequential Logic</summary>
+<p>
+
+
+
+<details><summary>Latches and Flip-Flops</summary>
+<p>
+
+---------------111111111111----------------------11111111111-------------------------1111111111-----------!here
+
+</p>
+</details>
+
+
+</p>
+</details>
 	
 	
 	
