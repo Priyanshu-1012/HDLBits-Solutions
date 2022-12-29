@@ -1429,5 +1429,42 @@ endmodule
 ## Exams/ece241 2013 q2 [Minimum SOP and POS]
 
 ```verilog
+module top_module (
+    input a,
+    input b,
+    input c,
+    input d,
+    output out_sop,
+    output out_pos
+); 
+
+    assign out_sop = (c&d) | (c&~a&~b) ;
+    assign out_pos = c & (d|~b) & (d|~a) ;
+endmodule
+```
+
+## Exams/m2014 q3 [Karnaugh map]
+
+```verilog
+module top_module (
+    input [4:1] x, 
+    output f );
+    assign f = (x[3]&~x[1]) | (x[3]&x[4]) | (x[2]&x[4]) | (x[1]&~x[3]&~x[4]) | (x[1]&~x[2]&x[3]) | (~x[1]&~x[2]&~x[4]);
+endmodule
+```
+
+## Exams/2012 q1g [Karnaugh map]
+
+```verilog
+module top_module (
+    input [4:1] x,
+    output f
+); 
+    assign f = (~x[1]&x[3]) | (x[2]&x[3]&x[4]) | (~x[2]&~x[4]);
+endmodule
+```
+## Exams/ece241 2014 q3 [K-map imlimented with a multiplexer]
+
+```verilog
 
 ```
