@@ -1517,3 +1517,222 @@ module top_module (
     
 endmodule
 ```
+
+## Dff [D flip-flop]
+
+```verilog
+module top_module (
+    input clk,    // Clocks are used in sequential circuits
+    input d,
+    output reg q );//
+
+    always @(posedge clk) begin // Use a clocked always block
+   		q <= d; //   copy d to q at every positive edge of clk
+    end 
+
+endmodule
+```
+
+## Dff8 [D flip-flops]
+
+```verilog
+module top_module (
+    input clk,
+    input [7:0] d,
+    output [7:0] q
+);
+    always @(posedge clk) begin
+        q <= d;
+    end
+endmodule
+```
+
+## Dff8r [DFF with reset]
+
+```verilog
+module top_module (
+    input clk,
+    input reset,            // Synchronous reset
+    input [7:0] d,
+    output [7:0] q
+);
+    always @(posedge clk) begin
+        if(reset==0)
+            q <= d;
+        else q <= 0;
+    end
+endmodule
+```
+
+## Dff8p [DFF with reset value]
+
+```verilog
+module top_module (
+    input clk,
+    input reset,
+    input [7:0] d,
+    output [7:0] q
+);
+    always @(negedge clk) begin
+        if(reset==0)
+            q <= d;
+        else q <= 'h34;
+    end
+endmodule
+```
+
+## Dff8ar [DFF with asynchronous reset]
+
+```verilog
+module top_module (
+    input clk,
+    input areset,   // active high asynchronous reset
+    input [7:0] d,
+    output [7:0] q
+);
+
+    always @(posedge clk or posedge areset) begin
+        if(areset==1)
+            q <= 0;
+        else q <= d;
+    end
+endmodule
+```
+
+## Dff16e [DFF with byte enable]
+
+```verilog
+module top_module (
+    input clk,
+    input resetn,
+    input [1:0] byteena,
+    input [15:0] d,
+    output [15:0] q
+);
+    always @(posedge clk) begin
+        if(resetn==0)
+            q <= 0;
+        else begin
+            if(byteena[1]==1)
+                q[15:8] <= d[15:8];
+            else ;
+            
+            if(byteena[0]==1)
+                q[7:0] <= d[7:0];
+            else ;
+        end
+    end
+
+endmodule
+```
+
+## Exams/m2014 q4a [D Latch]
+
+```verilog
+module top_module (
+    input d, 
+    input ena,
+    output q);
+
+    always @(*) begin
+        if(ena==1)
+            q <= d;
+   		 else ;
+    end
+endmodule
+```
+
+## Exams/m2014 q4b [DFF]
+
+```verilog
+module top_module (
+    input clk,
+    input d, 
+    input ar,   // asynchronous reset
+    output q);
+
+    always @(posedge clk or posedge ar) begin
+        if(ar==1)
+            q <= 0;
+        else
+            q <= d;
+    end
+endmodule
+```
+
+## Exams/m2014 q4c [DFF]
+
+```verilog
+module top_module (
+    input clk,
+    input d, 
+    input r,   // synchronous reset
+    output q);
+
+    always @(posedge clk) begin
+        if(r==1)
+            q <= 0;
+        else q <= d;
+    end
+endmodule
+```
+
+## Exams/m2014 q4d [DFF+gate]
+
+```verilog
+module top_module (
+    input clk,
+    input in, 
+    output out);
+    
+    wire d;
+    assign d = out ^ in;
+    always @(posedge clk) begin
+        out <= d;
+    end
+        
+endmodule
+```
+
+## Mt2015 muxdff [Mux annd DFF]
+
+```verilog
+module top_module (
+	input clk,
+	input L,
+	input r_in,
+	input q_in,
+	output reg Q);
+
+    wire d;
+    
+    assign d= L ? r_in : q_in;
+    
+    always @(posedge clk) begin
+        Q <= d; end
+endmodule
+```
+## Exams/2014 q4a [Mux and DFF]
+
+```verilog
+module top_module (
+    input clk,
+    input w, R, E, L,
+    output Q
+);
+
+    wire w1,d;
+    
+    assign w1= E ? w : Q;
+    assign d = L ? R : w1;
+    
+    always @(posedge clk) 
+        Q <= d;
+        
+endmodule
+```
+## Exams/ece241 2014 q4 [DFFs and gates]
+
+```verilog
+
+```
