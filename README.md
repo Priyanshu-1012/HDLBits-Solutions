@@ -1422,7 +1422,7 @@ module top_module(
     input d,
     output out  ); 
     
-    assign out = a ^ b ^ c ^ d;
+    assign out = a ^ b ^ c ^ d;    //kmap simplfies to XOR
     
 endmodule
 ```
