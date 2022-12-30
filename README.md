@@ -9,6 +9,10 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 [https://edaplayground.com/x/NXh_](https://edaplayground.com/x/NXh_)
 	
+	| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | [Content Cell](https://edaplayground.com/x/NXh_)  |
+	
 :white_check_mark: [Getting Started](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one-getting-started) 
 
 :white_check_mark: [Output Zero](https://github.com/Priyanshu-1012/HDLBits-Solutions#zero-output-zero)
