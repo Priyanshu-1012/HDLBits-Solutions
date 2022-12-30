@@ -6,6 +6,8 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 <details><summary>Getting Started</summary>
 <p>
+
+[https://edaplayground.com/x/NXh_](https://edaplayground.com/x/NXh_)
 	
 :white_check_mark: [Getting Started](https://github.com/Priyanshu-1012/HDLBits-Solutions#step-one-getting-started) 
 
