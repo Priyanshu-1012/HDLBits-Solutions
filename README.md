@@ -9,7 +9,7 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 [https://edaplayground.com/x/NXh_](https://edaplayground.com/x/NXh_)
 	
-	| First Header  | Second Header |
+| First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | https://edaplayground.com/x/NXh_ |
 	
