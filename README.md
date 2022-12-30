@@ -258,7 +258,42 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 <details><summary>Latches and Flip-Flops</summary>
 <p>
 
----------------111111111111----------------------11111111111-------------------------1111111111-----------!here
+
+:white_check_mark: [D flip-flop](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff-d-flip-flop)
+
+:white_check_mark: [D flip-flops](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff8-d-flip-flops)
+
+:white_check_mark: [DFF with reset](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff8r-dff-with-reset)
+
+:white_check_mark: [DFF with reset value](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff8p-dff-with-reset-value)
+
+:white_check_mark: [DFF with asynchronous reset](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff8ar-dff-with-asynchronous-reset)
+
+:white_check_mark: [DFF with byte enable](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#dff16e-dff-with-byte-enable)
+
+:white_check_mark: [D Latch](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsm2014-q4a-d-latch)
+
+:white_check_mark: [DFF](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsm2014-q4b-dff)
+
+:white_check_mark: [DFF](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsm2014-q4c-dff)
+
+:white_check_mark: [DFF+gate](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsm2014-q4d-dffgate)
+
+:white_check_mark: [Mux and DFF](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#mt2015-muxdff-mux-and-dff)
+
+:white_check_mark: [Mux and DFF](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#exams2014-q4a-mux-and-dff)
+
+:white_check_mark: [DFFs and gates](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsece241-2014-q4-dffs-and-gates)
+
+:white_check_mark: [Create circuit from truth table](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#examsece241-2013-q7-create-circuit-from-truth-table)
+
+:white_check_mark: [Detect an edge](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#edgedetect-detect-an-edge)
+
+
+
+
+
+------------1111111111111-----------111111111----------1111111111111-----------11111111-------------1111111111-------here!
 
 </p>
 </details>
@@ -1694,7 +1729,7 @@ module top_module (
 endmodule
 ```
 
-## Mt2015 muxdff [Mux annd DFF]
+## Mt2015 muxdff [Mux and DFF]
 
 ```verilog
 module top_module (
