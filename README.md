@@ -1852,5 +1852,39 @@ module top_module (
 ## Edgedetect [Detect an edge]
 
 ```verilog
+module top_module (
+    input clk,
+    input [7:0] in,
+    output [7:0] pedge
+);
+    reg [7:0] del;    //reg to store delayed value of in[7:0]
+    
+    always @(posedge clk) begin
+        del <= in; 
+        pedge <= ~del & in;
+ 	end
+endmodule
+```
+
+## Edgedetect2 [Detect both edges]
+
+```verilog
+module top_module (
+    input clk,
+    input [7:0] in,
+    output [7:0] anyedge
+);
+    wire [7:0]del;
+
+    always @(posedge clk) begin
+        del <= in; 
+        anyedge <= del ^ in;
+ 	end
+endmodule
+```
+
+## Edgecapture [Edge capture register]
+
+```verilog
 
 ```
