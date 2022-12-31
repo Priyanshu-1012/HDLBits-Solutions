@@ -289,11 +289,11 @@ _Goto HDLBits_ :point_right: [click here](https://hdlbits.01xz.net/wiki/Step_one
 
 :white_check_mark: [Detect an edge](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#edgedetect-detect-an-edge)
 
-
-
-
-
-------------1111111111111-----------111111111----------1111111111111-----------11111111-------------1111111111-------here!
+:white_check_mark: [Detect both edges](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#edgedetect2-detect-both-edges)
+	
+:white_check_mark: [Edge capture register](https://github.com/Priyanshu-1012/HDLBits-Solutions/blob/main/README.md#edgecapture-edge-capture-register)
+	
+	
 
 </p>
 </details>
