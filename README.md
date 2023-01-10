@@ -1886,5 +1886,5 @@ endmodule
 ## Edgecapture [Edge capture register]
 
 ```verilog
-j
+mod
 ```
