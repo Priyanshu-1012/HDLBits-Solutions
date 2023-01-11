@@ -399,6 +399,7 @@ module top_module (
     output p1y,
     input p2a, p2b, p2c, p2d,
     output p2y );
+    
 wire andp2ab,andp2cd,andp1abc,andp1def;
 
     assign andp2ab = p2a&p2b, 
