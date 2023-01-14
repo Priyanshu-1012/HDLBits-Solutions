@@ -387,7 +387,7 @@ wire andab,andcd,orout;
     assign andab=a&b,
            andcd=c&d, 
            orout=andab|andcd;
-           
+	   
     assign out=orout, 
            out_n= ~(orout);
 endmodule
@@ -889,7 +889,9 @@ module top_module (
     output reg up  ); 
    
    always @* begin
+   
     up=0;down=0;right=0;left=0;
+    
       case(scancode)
         16'he06b : left = 1;
         16'he072 : down = 1;
