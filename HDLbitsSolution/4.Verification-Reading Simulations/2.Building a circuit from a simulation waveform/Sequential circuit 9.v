@@ -2,8 +2,15 @@ module top_module (
     input clk,
     input a,
     output [3:0] q );
-    
-    always @(posedge clk)
-        q<= a ? 'd4 : ((q==6) ? 0 : q+1);
 
- endmodule
+    always @(posedge clk)begin
+        if(a)
+            q<=4'd4;
+        else begin
+            if(q==4'd6)
+                q<=0;
+            else 
+                q<=q+4'd1;
+        end
+    end
+endmodule
